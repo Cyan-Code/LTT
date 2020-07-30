@@ -364,6 +364,11 @@ body{
     background-color:#4be010;
 }
 
+.main .grid-videos img{
+    max-height: 155px;
+}
+
+
 
 
 
