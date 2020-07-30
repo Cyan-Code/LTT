@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Satisfy';
+    background: #00000033;
+}
+
+.title{
+    width: 100%;
+    background: #34c017d0;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 180;
+    text-align: center;
+}
+
+ 
+/*Contenedor*/
+
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(140px, 140px) auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas:"header header"
+                        "menu contenido";
+    transition: all .3s ease;
+}
+
+.contenedor.active{
+    grid-template-columns: 340px auto;
+}
+/********HEADER*******/
+
+.header {
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo titulos challenges";
+    background: #464444b7;
+}
+
+/**LOGO**/
+
+.header .contenedor-logo .glob{
+    color: #2e2a2a;
+    font-size: 20px;
+}
+
+.header .contenedor-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu{
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 100px;
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    color: #48ff00;
+}
+
+.header .contenedor-logo .boton-menu:hover{
+    background-color: #5c5353;
+}
+
+.header .contenedor-logo .logo .fas{
+    height: 56px;
+    color: #48ff00;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    position: relative;
+    margin-right: 0px;
+}
+
+.header .contenedor-logo .logo .fas:hover{
+    background-color: #5c5353;
+}
+
+.header .contenedor-logo .logo .glob{
+    font-size: 25px;
+}
+
+
+/**TITULO**/
+
+
+.header .titulo{
+    grid-area: titulos;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.header .titulo .fas{
+    margin-right: 140px;
+    color: #06111f;
+    font-size: 59px;
+    position: relative;
+    justify-content: center;
+}
+
+.header .titulo .fas:hover{
+    color: #2ccc17;
+}
+
+
+
+/*******Menú Lateral*******/
+
+
+.menu-lateral{
+    grid-area: menu;
+    background: #292626;
+    overflow: hidden;
+}
+
+.menu-lateral a{
+    font-size: 30px;
+    display: block;
+    min-width: 800px;
+    color: blanchedalmond;
+}
+
+
+.main{
+    grid-area: contenido;
+}
+
+.menu-lateral i:hover{
+    background: #464444b7;
+}
+
+/*ICONOS*/
+
+.menu-lateral .fas{
+    font-size: 90px;
+    margin-right: 25px;
+    padding: 20px 25px;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.menu-lateral .fab:hover{
+    color: #2ccc17;
+}
+
+.menu-lateral .fas:hover{
+    color: #2ccc17;
+}
+
+
+
+
+
+
+

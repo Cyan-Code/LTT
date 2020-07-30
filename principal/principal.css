@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Century Gothic';
+    font-family: 'Satisfy';
     background: #00000033;
 }
 
@@ -41,7 +41,7 @@ img{
 
 .Navegacion{
     width: 100%;
-    background: #000000b7;   
+    background: #464444b7;   
     display: flex;
     justify-content: center;
 }
